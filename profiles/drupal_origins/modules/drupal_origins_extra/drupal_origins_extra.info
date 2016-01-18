@@ -1,0 +1,17 @@
+name = Drupal Origins Extra modules extension
+description = Drupal Origins Extra modules extension
+core = 7.x
+
+; Dependencies:
+dependencies[] = flexslider
+dependencies[] = flexslider_views
+dependencies[] = jcarousel
+dependencies[] = colorbox
+dependencies[] = chosen
+
+; Information added by Drupal.org packaging script on 2015-12-17
+version = "7.x-1.11"
+core = "7.x"
+project = "drupal_origins"
+datestamp = "1450360509"
+

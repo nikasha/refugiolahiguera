@@ -1,0 +1,17 @@
+name = Drupal Origins Search Extension
+description = Drupal Origins Search Extension
+core = 7.x
+
+; Dependencies:
+dependencies[] = search_api
+dependencies[] = search_api_db
+dependencies[] = search_api_facetapi
+dependencies[] = search_api_views
+dependencies[] = facetapi
+
+; Information added by Drupal.org packaging script on 2015-12-17
+version = "7.x-1.11"
+core = "7.x"
+project = "drupal_origins"
+datestamp = "1450360509"
+

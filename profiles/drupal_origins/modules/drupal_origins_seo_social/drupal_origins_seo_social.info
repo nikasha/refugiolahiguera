@@ -1,0 +1,16 @@
+name = Drupal Origins SEO Extension
+description = Drupal Origins SEO Extension
+core = 7.x
+
+dependencies[] = metatag
+dependencies[] = globalredirect
+dependencies[] = service_links
+dependencies[] = general_services
+dependencies[] = xmlsitemap
+
+; Information added by Drupal.org packaging script on 2015-12-17
+version = "7.x-1.11"
+core = "7.x"
+project = "drupal_origins"
+datestamp = "1450360509"
+

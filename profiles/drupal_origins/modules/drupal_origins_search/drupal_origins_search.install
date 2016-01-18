@@ -1,0 +1,11 @@
+<?php
+/**
+ * @file Define installation settings to Search extension.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function drupal_origins_search_install() {
+
+}

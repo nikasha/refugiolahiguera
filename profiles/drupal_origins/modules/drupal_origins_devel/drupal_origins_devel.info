@@ -1,0 +1,14 @@
+name = Drupal Origins Devel Extension
+description = Drupal Origins Devel Extension 
+core = 7.x
+
+; Dependencies:
+dependencies[] = devel
+dependencies[] = maillog
+
+; Information added by Drupal.org packaging script on 2015-12-17
+version = "7.x-1.11"
+core = "7.x"
+project = "drupal_origins"
+datestamp = "1450360509"
+
