@@ -2,5 +2,6 @@
 sites/*/settings*.php
 
 # Ignore paths that contain user-generated content.
-sites/default/settings*.php
-
+sites/default/settings.php
+includes/*
+profiles/drupal_origins/modules/contrib/*
