@@ -1,0 +1,69 @@
+<?php
+/**
+ * @file
+ * Site-wide contact form in block.
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function contactblock_block_info() {
+  $blocks['contactblock'] = array(
+    'info' => t('Contact block'), 
+    'cache' => DRUPAL_NO_CACHE,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function contactblock_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'contactblock':
+      return array(
+        'subject' => t('Contact'),
+        'content' => contactblock_get_contact_form(),
+      );
+      break;
+
+  }
+  return $block;
+}
+
+function contactblock_get_contact_form() {
+  $form = drupal_get_form('contact_site_form');
+  $output = drupal_render($form);
+
+  return $output;
+}
+
+/**
+ * Implements contact_site_form().
+ */
+function contact_site_form($form, &$form_state) {
+  $form['date'] = array(
+    '#title' => t('Arrival Date'),
+    '#type' => 'date_popup', // Provided by the date_popup module
+    '#date_format' => 'j F Y', // Uses the PHP date() format - http://php.net/manual/en/function.date.php
+    '#date_year_range' => '0:+2', // Limits the year range to the next two upcoming years
+    '#required' => TRUE,
+    '#default_value' => date('Y-m-d', time()), // Default value must be in 'Y-m-d' format.
+  );
+  $form['date_2'] = array(
+    '#title' => t('Departure Date'),
+    '#type' => 'date_popup', // Provided by the date_popup module
+    '#date_format' => 'j F Y', // Uses the PHP date() format - http://php.net/manual/en/function.date.php
+    '#date_year_range' => '0:+2', // Limits the year range to the next two upcoming years
+    '#required' => TRUE,
+    '#default_value' => date('Y-m-d', time()), // Default value must be in 'Y-m-d' format.
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Book Now'),
+  );
+  return $form;
+}
