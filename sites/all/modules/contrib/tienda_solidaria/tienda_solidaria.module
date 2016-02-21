@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the tienda_solidaria feature.
+ */
+
+include_once 'tienda_solidaria.features.inc';

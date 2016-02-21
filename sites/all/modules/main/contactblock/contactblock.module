@@ -45,25 +45,22 @@ function contactblock_get_contact_form() {
  * Implements contact_site_form().
  */
 function contact_site_form($form, &$form_state) {
-  $form['date'] = array(
-    '#title' => t('Arrival Date'),
-    '#type' => 'date_popup', // Provided by the date_popup module
-    '#date_format' => 'j F Y', // Uses the PHP date() format - http://php.net/manual/en/function.date.php
-    '#date_year_range' => '0:+2', // Limits the year range to the next two upcoming years
-    '#required' => TRUE,
-    '#default_value' => date('Y-m-d', time()), // Default value must be in 'Y-m-d' format.
-  );
-  $form['date_2'] = array(
-    '#title' => t('Departure Date'),
-    '#type' => 'date_popup', // Provided by the date_popup module
-    '#date_format' => 'j F Y', // Uses the PHP date() format - http://php.net/manual/en/function.date.php
-    '#date_year_range' => '0:+2', // Limits the year range to the next two upcoming years
-    '#required' => TRUE,
-    '#default_value' => date('Y-m-d', time()), // Default value must be in 'Y-m-d' format.
-  );
-  $form['submit'] = array(
-    '#type' => 'submit',
-    '#value' => t('Book Now'),
-  );
+  $form['name'] = array(
+   '#type' => 'textfield',
+   '#title' => t('Name'),
+   '#required' => TRUE,
+ );
+ $form['date_2'] = array(
+  '#title' => t('Departure Date'),
+  '#type' => 'date_popup', // Provided by the date_popup module
+  '#date_format' => 'j F Y', // Uses the PHP date() format - http://php.net/manual/en/function.date.php
+  '#date_year_range' => '0:+2', // Limits the year range to the next two upcoming years
+  '#required' => TRUE,
+  '#default_value' => date('Y-m-d', time()), // Default value must be in 'Y-m-d' format.
+ );
+ $form['submit'] = array(
+  '#type' => 'submit',
+  '#value' => t('Book Now'),
+ );
   return $form;
 }
