@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the eventos_y_mercadillos feature.
+ */
+
+include_once 'eventos_y_mercadillos.features.inc';

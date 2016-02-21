@@ -1,0 +1,16 @@
+name = donaciones
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = menu
+dependencies[] = page_manager
+dependencies[] = views
+dependencies[] = views_content
+features[ctools][] = page_manager:pages_default:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[menu_custom][] = main-menu
+features[menu_links][] = main-menu_donaciones:donaciones
+features[page_manager_pages][] = donaciones
+features[views_view][] = donaciones
+features_exclude[dependencies][ctools] = ctools

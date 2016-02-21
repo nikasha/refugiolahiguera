@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the nuestros_gatetes feature.
+ */
+
+include_once 'nuestros_gatetes.features.inc';
