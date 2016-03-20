@@ -101,25 +101,6 @@ function eventos_socios_y_voluntarios_default_page_manager_pages() {
     $display->content['new-4c086390-8824-4644-ad7a-a3e7fa23c6be'] = $pane;
     $display->panels['left'][0] = 'new-4c086390-8824-4644-ad7a-a3e7fa23c6be';
     $pane = new stdClass();
-    $pane->pid = 'new-d5486637-fbd1-4947-89fb-a2d29503f319';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'eventos_privados-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'd5486637-fbd1-4947-89fb-a2d29503f319';
-    $display->content['new-d5486637-fbd1-4947-89fb-a2d29503f319'] = $pane;
-    $display->panels['middle'][0] = 'new-d5486637-fbd1-4947-89fb-a2d29503f319';
-    $pane = new stdClass();
     $pane->pid = 'new-ef7cc077-559b-4b18-b88d-169f5a264a08';
     $pane->panel = 'right';
     $pane->type = 'block';

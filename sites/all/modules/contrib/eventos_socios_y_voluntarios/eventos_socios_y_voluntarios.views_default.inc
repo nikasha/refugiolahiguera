@@ -37,21 +37,7 @@ function eventos_socios_y_voluntarios_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Fotos */
-  $handler->display->display_options['fields']['field_shared_images']['id'] = 'field_shared_images';
-  $handler->display->display_options['fields']['field_shared_images']['table'] = 'field_data_field_shared_images';
-  $handler->display->display_options['fields']['field_shared_images']['field'] = 'field_shared_images';
-  $handler->display->display_options['fields']['field_shared_images']['label'] = '';
-  $handler->display->display_options['fields']['field_shared_images']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_images']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_images']['settings'] = array(
-    'image_style' => 'medium',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['fields']['field_shared_images']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_shared_images']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_shared_images']['separator'] = '';
-  /* Field: Content: Descripción */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';

@@ -69,7 +69,7 @@ function nuestros_gatetes_views_default_views() {
     'title_class' => '',
   );
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 0;
-  /* Field: Content: Edad */
+  /* Field: Content: Age */
   $handler->display->display_options['fields']['field_cat_age']['id'] = 'field_cat_age';
   $handler->display->display_options['fields']['field_cat_age']['table'] = 'field_data_field_cat_age';
   $handler->display->display_options['fields']['field_cat_age']['field'] = 'field_cat_age';
@@ -79,20 +79,6 @@ function nuestros_gatetes_views_default_views() {
     'thousand_separator' => '',
     'prefix_suffix' => 1,
   );
-  /* Field: Content: Fotos */
-  $handler->display->display_options['fields']['field_shared_images']['id'] = 'field_shared_images';
-  $handler->display->display_options['fields']['field_shared_images']['table'] = 'field_data_field_shared_images';
-  $handler->display->display_options['fields']['field_shared_images']['field'] = 'field_shared_images';
-  $handler->display->display_options['fields']['field_shared_images']['label'] = '';
-  $handler->display->display_options['fields']['field_shared_images']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_images']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_images']['settings'] = array(
-    'image_style' => 'medium',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['fields']['field_shared_images']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_shared_images']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_shared_images']['separator'] = '';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -112,7 +98,7 @@ function nuestros_gatetes_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'cat' => 'cat',
   );
-  /* Filter criterion: Content: Edad (field_cat_age) */
+  /* Filter criterion: Content: Age (field_cat_age) */
   $handler->display->display_options['filters']['field_cat_age_value']['id'] = 'field_cat_age_value';
   $handler->display->display_options['filters']['field_cat_age_value']['table'] = 'field_data_field_cat_age';
   $handler->display->display_options['filters']['field_cat_age_value']['field'] = 'field_cat_age_value';

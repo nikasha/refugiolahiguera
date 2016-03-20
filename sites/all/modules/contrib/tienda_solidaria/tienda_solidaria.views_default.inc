@@ -38,30 +38,18 @@ function tienda_solidaria_views_default_views() {
   $handler->display->display_options['style_options']['vertical'] = 0;
   $handler->display->display_options['style_options']['navigation'] = 'before';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Fotos */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_shared_images']['id'] = 'field_shared_images';
   $handler->display->display_options['fields']['field_shared_images']['table'] = 'field_data_field_shared_images';
   $handler->display->display_options['fields']['field_shared_images']['field'] = 'field_shared_images';
   $handler->display->display_options['fields']['field_shared_images']['label'] = '';
   $handler->display->display_options['fields']['field_shared_images']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_images']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_images']['settings'] = array(
-    'image_style' => 'medium',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['fields']['field_shared_images']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_shared_images']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_shared_images']['separator'] = '';
-  /* Field: Content: Precio */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_shared_integer']['id'] = 'field_shared_integer';
   $handler->display->display_options['fields']['field_shared_integer']['table'] = 'field_data_field_shared_integer';
   $handler->display->display_options['fields']['field_shared_integer']['field'] = 'field_shared_integer';
   $handler->display->display_options['fields']['field_shared_integer']['label'] = '';
   $handler->display->display_options['fields']['field_shared_integer']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_integer']['settings'] = array(
-    'thousand_separator' => ' ',
-    'prefix_suffix' => 1,
-  );
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -105,30 +93,6 @@ function tienda_solidaria_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Precio */
-  $handler->display->display_options['fields']['field_shared_integer']['id'] = 'field_shared_integer';
-  $handler->display->display_options['fields']['field_shared_integer']['table'] = 'field_data_field_shared_integer';
-  $handler->display->display_options['fields']['field_shared_integer']['field'] = 'field_shared_integer';
-  $handler->display->display_options['fields']['field_shared_integer']['label'] = '';
-  $handler->display->display_options['fields']['field_shared_integer']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_integer']['settings'] = array(
-    'thousand_separator' => ' ',
-    'prefix_suffix' => 1,
-  );
-  /* Field: Content: Fotos */
-  $handler->display->display_options['fields']['field_shared_images']['id'] = 'field_shared_images';
-  $handler->display->display_options['fields']['field_shared_images']['table'] = 'field_data_field_shared_images';
-  $handler->display->display_options['fields']['field_shared_images']['field'] = 'field_shared_images';
-  $handler->display->display_options['fields']['field_shared_images']['label'] = '';
-  $handler->display->display_options['fields']['field_shared_images']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_images']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_images']['settings'] = array(
-    'image_style' => 'medium',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['fields']['field_shared_images']['delta_limit'] = '2';
-  $handler->display->display_options['fields']['field_shared_images']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_shared_images']['separator'] = '                           ';
 
   /* Display: Artículos Portada */
   $handler = $view->new_display('panel_pane', 'Artículos Portada', 'panel_pane_2');
@@ -163,31 +127,19 @@ function tienda_solidaria_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Fotos */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_shared_images']['id'] = 'field_shared_images';
   $handler->display->display_options['fields']['field_shared_images']['table'] = 'field_data_field_shared_images';
   $handler->display->display_options['fields']['field_shared_images']['field'] = 'field_shared_images';
   $handler->display->display_options['fields']['field_shared_images']['label'] = '';
   $handler->display->display_options['fields']['field_shared_images']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_images']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_shared_images']['settings'] = array(
-    'image_style' => 'flexslider_full',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['fields']['field_shared_images']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_shared_images']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_shared_images']['separator'] = '';
-  /* Field: Content: Precio */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_shared_integer']['id'] = 'field_shared_integer';
   $handler->display->display_options['fields']['field_shared_integer']['table'] = 'field_data_field_shared_integer';
   $handler->display->display_options['fields']['field_shared_integer']['field'] = 'field_shared_integer';
   $handler->display->display_options['fields']['field_shared_integer']['label'] = '';
   $handler->display->display_options['fields']['field_shared_integer']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_shared_integer']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_shared_integer']['settings'] = array(
-    'thousand_separator' => ' ',
-    'prefix_suffix' => 1,
-  );
   $translatables['shop'] = array(
     t('Master'),
     t('more'),
